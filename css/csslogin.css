@@ -1,0 +1,156 @@
+
+@media screen and (min-width:960px){
+.login {
+  background-image: url(../pic/login2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 98vw;
+  height: 780px;
+  /*margin :auto;*/
+  position: relative;
+  /*z-index: 1;*/
+  /*width: 100%;
+  height: 100%;*/
+}
+
+.logininput {
+  width: 400px;
+  height: 300px;
+  background-color: rgba(230, 230, 230, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:  auto;
+  /*margin: calc((100%-300px)/2) ;
+  text-align: left;
+  border-radius: 10px;
+  /*margin: 20% 40%;*/
+  /*opacity:1;*/
+}
+
+span {
+  color: rgba(71, 71, 71, 1);;
+}
+
+.logintopic h3 {
+  color: rgba(71 71, 71, 1);
+  font-size: 36px;
+  /*font-size:*/
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+.loginid {
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.password {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.loginid span {
+  margin-right: 10px;
+}
+
+.submit {
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  padding: 5px 15px;
+  background:  rgba(230, 230, 230, 0.5);
+  color: rgba(71, 71, 71, 1);
+  border: 2px solid rgba(71, 71, 71, 1);
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+}
+
+@media screen and (max-width:960px){
+.login {
+  background-image: url(../pic/login2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 99%;
+  height: 90vw ;
+  /*margin :auto;*/
+  position: relative;
+  /*z-index: 1;*/
+  /*width: 100%;
+  height: 100%;*/
+}
+
+.logininput {
+  width: 75vw;
+  height: 50vw;
+  background-color: rgba(230, 230, 230, 0.5);
+  position: absolute;
+
+  /*top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+  /*margin: calc((100%-300px)/2) ;*/
+  text-align: left;
+  border-radius: 10px;
+  margin:10vw 10vw;
+  /*opacity:1;*/
+}
+.logininput .logintopic  h3{
+  font-size: 20px;
+  line-height: 1.5em;
+}
+span {
+  color: rgba(71, 71, 71, 1);
+  font-size: 12px;
+}
+
+.logintopic h3 {
+  color: rgba(71, 71, 71, 1);
+    /*font-size:*/
+  margin-top: 0;
+  text-align: center;
+
+}
+
+.loginid {
+  margin-left: 5px;
+  margin-top: 0;
+}
+
+.password {
+  margin-left: 5px;
+  margin-top: 0;
+}
+
+.loginid span {
+  margin-left: calc((50%-275px)/2);
+}
+.password span {
+  margin-left: calc((50%-275px)/2);
+}
+
+.submit {
+  margin-left: 70%;
+  margin-top: -10%;
+}
+
+input[type="submit"] {
+  padding: 5px 15px;
+  background:  rgba(230, 230, 230, 0.5);
+  color: rgba(71, 71, 71, 1);
+  border: 2px solid rgba(71, 71, 71, 1);
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+}

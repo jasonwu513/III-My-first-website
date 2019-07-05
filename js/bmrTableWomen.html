@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMR TABLE</title>
+    <style media="screen">
+        body{
+              background: linear-gradient(to right, #25c481, #25b7c4);
+        }
+        td,th{
+            width: 120px;
+        }
+        table,tr,td{
+            /*border: 1px red solid；*/
+            border: 1px solid #ccc;
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            margin:15px auto;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        *{
+
+            color:#eee;
+        }
+        .kg{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> 女性29歲　BMR　 (Basal Metabolic Rate)基礎代謝　速查表</h1>
+    <h2>TDEE 每日消耗熱量對照表</h2>
+<table>
+    <tr>
+        <td></td>
+        <td>TDEE 係數</td>
+        <td>生活習慣</td>
+    </tr>
+    <tr>
+        <td>A type</td>
+        <td>1.2</td>
+        <td>久坐族／無運動習慣者</td>
+    </tr>
+    <tr>
+        <td>B type</td>
+        <td>1.375</td>
+        <td>輕度運動者／一周一至三天運動</td>
+    </tr>
+    <tr>
+        <td>C type</td>
+        <td>1.55</td>
+        <td>中度運動者／一周三至五天運動</td>
+    </tr>
+    <tr>
+        <td>D type</td>
+        <td>1.725</td>
+        <td>激烈運動者／一周六至七天運動</td>
+    </tr>
+    <tr>
+        <td>E type</td>
+        <td>1.9</td>
+        <td>超激烈運動者／體力活的工作／一天訓練兩次</td>
+    </tr>
+</table>
+<table  >
+<script>
+    document.write('<tr class="kg">'+"<th>"+"</th>");
+
+        for(k=145;k<=180;k=k+2.5){
+            document.write("<th>"+k+"cm"+"</th>");
+        }
+    document.write("</tr>");
+
+    for(i=45;i<=100;i++)
+        {document.write('<tr class="kg">'+"<td>"+i+"kg"+"</td>");
+
+            for(j=145;j<=180;j=j+2.5)
+            { bmr=(9.6*i)+(1.8*j)-(4.7*29)+655;
+            document.write("<td>"+i+"公斤"+"<br>"+j+"公分"+"<br>"+"BMR="+Math.round(bmr)+"大卡"
+            +"TDEE(A):"+Math.round(bmr*1.2)+"大卡"+"<br>"
+            +"TDEE(B):"+Math.round(bmr*1.375)+"大卡"+"<br>"
+            +"TDEE(C):"+Math.round(bmr*1.55)+"大卡"+"<br>"
+            +"TDEE(D):"+Math.round(bmr*1.725)+"大卡"+"<br>"
+            +"TDEE(E):"+Math.round(bmr*1.9)+"大卡"+"<br>"
+            +"</td>");
+            }
+    document.write("</tr>");
+    }
+</script>
+</table>
+</body>
+</html>

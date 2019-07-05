@@ -1,0 +1,394 @@
+@media screen and (min-width:750px) {
+
+h2 {
+  font-family: 'Damion', cursive;
+  font-size: 50px;
+  font-weight: lighter;
+  color: rgb(71, 71, 71);
+  text-align: center;
+}
+.h2{
+  margin: auto;
+  position: relative;
+}
+h2:after {
+  content: url('pic/frame_06.png');
+  position: absolute;
+  bottom: -65px;
+  left: 360px;
+}
+.weekdiary{
+  margin-top: 50px;
+  max-width: 956px;
+  margin: auto;
+}
+.weekdiary a{
+
+  float: left;
+  margin-left: 350px;
+  margin-top: 20px;
+  margin-bottom:  20px;
+  font-size: 36px;
+  text-align: center;
+}
+.weekdiary input{
+  border-radius: 20px;
+  font-size: 20px;
+  float: left;
+  margin: 15px;
+  padding: 5px;
+  border:solid 2px #aaa;
+}
+.weekdiary button{
+  background-image: url(../pic/button.svg);
+
+  font-size: 20px;
+  float: left;
+  /*background-size: 100%;*/
+  margin:  17px 0 20px 0;
+
+  padding: 5px;
+  border:0;
+display:block;
+height:34px;
+width: 72px;
+}
+
+.diarysearchpic{
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-left: 20px;
+  border: 1px dotted #aaa;
+}
+
+.diarysearchcarorie{
+  float: left;
+  width: 120px;
+  margin: 15px;
+  border-radius: 10px;
+  border: 2px dotted #ccc;
+  padding: 5px;
+}
+
+.Mon,.Tue,.Wed,.Thu,.Fri,.Sat,.Sun{
+  width: 13.2%;
+  min-height: 800px;
+  background-color: rgb(242, 242, 242);
+  float: left;
+  margin: 0.5%;
+  border-radius: 5px 60px ;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+.Mon h3,.Tue h3,.Wed h3,.Thu h3,.Fri h3,.Sat h3,.Sun h3{
+  margin: 10px;
+  color:rgb(59, 59, 59);
+}
+
+.Tue{
+  background-color: rgb(255, 228, 177);
+
+}
+.Wed{
+  background-color: rgb(254, 253, 224);
+}
+.Thu{
+  background-color: rgb(218, 230, 189);
+}
+.Fri{
+  background-color: rgb(198, 230, 225);
+}
+.Sat{
+  background-color: rgb(235, 226, 223);
+}
+.Sun{
+  background-color: rgb(250, 219, 223);
+}
+
+.weekdiary,.fitchart{
+  margin-top: 50px;
+  border-radius: 20px;
+  border: dotted 2px gray;
+  padding: 5px;
+}
+.meal{
+  margin: auto;
+  /*border-radius: 50%;*/
+  margin-top: 15px;
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  border: dashed 1px black;
+  position: relative;
+
+}
+.meal:hover:after{
+  content:'X';
+  position: absolute;
+  font-size: 50px;
+  line-height: 1.2em;
+  vertical-align: middle;
+  opacity: 0.7;
+  text-align: center;
+  left:0;
+  top: 0;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  color:#444;
+  cursor: pointer;
+  /*display: none;*/
+}
+.meal3{
+  margin: auto;
+  /*border-radius: 50%;*/
+  margin-top: 15px;
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  border: dashed 1px black;
+  display: none;
+}
+.meal1{
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 15px;
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  border: dashed 1px black;
+  text-align: center;
+
+}
+.meal1{
+  font-size: 60px;
+  text-align: center;
+  line-height: 0.85;
+  font-weight: lighter;
+}
+.carorie{
+  margin: auto;
+  /*margin-top: 5px;*/
+  padding: 5px;
+  width: 90px;
+  height: 25px;
+  text-align: center;
+  /*position: relative;*/
+  /*border-bottom: dotted 2px black;*/
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.carorietotal{
+  text-align: center;
+  margin-top: 20px auto;
+
+  padding: 10px
+  /*padding: 50px;*/
+}
+
+.meal1:hover{
+  cursor: pointer;
+}
+
+
+input:focus {
+  outline:none;
+  border:2px solid #7af;
+}
+}
+
+
+@media screen and (max-width:750px) {
+
+  h2 {
+    font-family: 'Damion', cursive;
+    font-size: 50px;
+    font-weight: lighter;
+    color: rgb(71, 71, 71);
+    text-align: center;
+  }
+  .h2{
+    margin: auto;
+    position: relative;
+  }
+  h2:after {
+    content: url('pic/frame_06.png');
+    position: absolute;
+    bottom: -65px;
+    left: 360px;
+  }
+  .weekdiary{
+    margin-top: 50px;
+    max-width: 956px;
+    margin: auto;
+  }
+  .weekdiary a{
+
+    float: left;
+    margin: 20px 20%;
+/*
+    margin-top: 20px;
+    margin-bottom:  20px;*/
+    font-size: 36px;
+    text-align: center;
+  }
+  .weekdiary input{
+    border-radius: 20px;
+    font-size: 20px;
+    float: left;
+    margin: 15px;
+    padding: 5px;
+    border:solid 2px #aaa;
+  }
+
+
+  .weekdiary button{
+    background-image: url(../pic/button.svg);
+
+    font-size: 20px;
+    float: left;
+    /*background-size: 100%;*/
+    margin:  17px 0 20px 0;
+
+    padding: 5px;
+    border:0;
+  display:block;
+  height:34px;
+  width: 72px;
+  }
+
+  .diarysearchpic{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 20px;
+    border: 1px dotted #aaa;
+  }
+
+  .diarysearchcarorie{
+    float: left;
+    width: 120px;
+    margin: 15px 5px;
+    border-radius: 10px;
+    border: 2px dotted #ccc;
+    padding: 5px;
+  }
+
+  .Mon,.Tue,.Wed,.Thu,.Fri,.Sat,.Sun{
+    width: 95%;
+    /*height: 800px;*/
+    background-color: rgb(242, 242, 242);
+    float: left;
+    margin: 0.5%;
+    border-radius: 5px 60px ;
+    padding-bottom: 30px;
+  }
+
+  /*.tue{
+    padding-bottom: 30px;
+
+  }*/
+  .Mon h3,.Tue h3,.Wed h3,.Thu h3,.Fri h3,.Sat h3,.Sun h3{
+    margin: 10px;
+    color:rgb(59, 59, 59);
+  }
+
+  .Tue{
+    background-color: rgb(255, 228, 177);
+
+  }
+  .Wed{
+    background-color: rgb(254, 253, 224);
+  }
+  .Thu{
+    background-color: rgb(218, 230, 189);
+  }
+  .Fri{
+    background-color: rgb(198, 230, 225);
+  }
+  .Sat{
+    background-color: rgb(235, 226, 223);
+  }
+  .Sun{
+    background-color: rgb(250, 219, 223);
+  }
+
+  .weekdiary,.fitchart{
+    margin-top: 50px;
+    border-radius: 20px;
+    border: dotted 2px gray;
+    padding: 5px;
+  }
+  .meal{
+    margin: auto 5%;
+    /*border-radius: 50%;*/
+    margin-top: 15px;
+    padding: 5px;
+    width: 50%;
+
+    border: dashed 1px black;
+    float: left;
+
+  }
+  .meal1{
+    margin: auto;
+    border-radius: 50%;
+    /*margin-top: 5%;*/
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    border: dashed 1px black;
+
+  }
+
+  .meal1{
+    font-size: 60px;
+    text-align: center;
+    line-height: 0.85;
+    font-weight: lighter;
+  }
+
+  .meal1:hover{
+    cursor: pointer;
+  }
+  .carorie{
+
+    /*margin-top: 5px;*/
+    padding: 5px;
+    width: 90px;
+    height: 90%;
+    text-align: center;
+    float: left;
+    padding-top: 25%;
+
+
+    /*position: relative;*/
+    /*border-bottom: dotted 2px black;*/
+  }
+
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .carorietotal{
+    text-align: center;
+    margin-top: 20px;
+    /*padding: 50px;*/
+  }
+
+
+
+  input:focus {
+    outline:none;
+    border:2px solid #7af;
+  }
+}

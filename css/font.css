@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css?family=Damion|Ubuntu");
+p {
+
+  font-family: sans-serif;
+}
+.boxp p {
+  padding: 3%;
+  text-indent: 2em;
+  /*margin-top: 15px;*/
+}
+.carorie {
+  font-size: 16px;
+}
+.nav {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  color: rgb(71, 71, 71);
+}
+
+h3 {
+  line-height: 2em;
+}
+.homepagestorycard p
+{font-size: 16px;}
+h1 {
+  font-family: 'Ubuntu', cursive;
+  text-align: center;
+  font-size: 45px;
+  font-weight: lighter;
+  color: rgb(71, 71, 71);
+  margin-top: 35px;
+}
+
+.nav, h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+}
+/*.nav  a {
+  font-size: 20px;
+}*/
+
+body {
+  font-family: 'Ubuntu', '微軟正黑體', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+
+.h1title {
+  position: relative;
+}
+
+h1:after {
+  content: url('../pic/frame_06.png');
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  right: 0;
+}
+
+.box ul {
+  /*text-align: center;*/
+  margin-top: 55px;
+  /*margin-right: calc((100%-960px)/2);
+  margin-left: calc((100%-960px)/2);*/
+  left: 0;
+  right: 0;
+}
+
+.homepagestorycard ul {
+  /*text-align: center;*/
+  margin-top: 0px;
+  /*margin-right: calc((100%-960px)/2);
+  margin-left: calc((100%-960px)/2);*/
+  left: 0;
+  right: 0;
+}
+
+.homepagemap ul {
+  margin-top: 10px;
+}
+
+.homepagediarypic p, .homepagemap p, .findAPartner p {
+  padding: 2% 10% 2% 10%;
+  font-size: 16px;
+}
+
+@media screen and (min-width:960px) {
+  .classchoose {
+    position: relative;
+    float: right;
+    left: -50%;
+    text-align: left;
+  }
+  .classchoose ul {
+    list-style: none;
+    position: relative;
+    left: 50%;
+  }
+  .classroom ul li {
+    /*display: inline-block;*/
+    margin: 0 0px;
+    float: left;
+    width: 240px;
+    position: relative;
+    text-align: center;
+  }
+  .classroom ul li a {
+    font-size: 21px;
+    color: rgb(71, 71, 71);
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    /*position: relative;*/
+  }
+  .classroom li a:after {
+    content: url('../pic/frame_03.png');
+    position: absolute;
+    bottom: -55px;
+    max-width: 40px;
+    left: -15px;
+  }
+  .fitclasscontent h3 {
+    color: rgb(100, 100, 100);
+    text-shadow: 2px 2px 2px #999;
+    font-size: 36px;
+    padding: 20px;
+  }
+  .lesson1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    font-size: 36px;
+    margin: 15px;
+    margin: 25px auto;
+  }
+  #lesson1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    font-size: 36px;
+    margin: 15px;
+    margin: 25px auto;
+  }
+  #box1_1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 80%;
+    text-align: left;
+    font-size: 16px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+
+  #boxback1_1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+  #box1_2 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 80%;
+    text-align: left;
+    font-size: 16px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+  #boxback1_2 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+  #box1_3 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 80%;
+    text-align: left;
+    font-size: 16px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+  #boxback1_3 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+}
+
+@media screen and (max-width:960px) {
+  .classchoose {
+    position: relative;
+    float: right;
+    left: -50%;
+    text-align: left;
+  }
+  .classchoose ul {
+    list-style: none;
+    position: relative;
+    left: 50%;
+  }
+  .classroom ul li {
+    /*display: inline-block;*/
+    float: left;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+  }
+  .classchoose ul li a {
+    font-size: 21px;
+    color: rgb(71, 71, 71);
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    text-decoration: none;
+    /*position: relative;*/
+  }
+  .classroom li a:after {
+    content: url('../pic/frame_03.png');
+    position: absolute;
+    bottom: -55px;
+    max-width: 40px;
+    left: calc((100vw - 275.06px)/2);
+  }
+
+  .lesson1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 70vw;
+    text-align: center;
+    font-size: 24px;
+    margin: 50px auto;
+  }
+  #lesson1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 70vw;
+    text-align: center;
+    font-size: 36px;
+    margin: 15px;
+    margin: 25px auto;
+  }
+  #box1_1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 95vw;
+    text-align: left;
+    font-size: 16px;
+    margin: 5px 5px;
+    display: none;
+  }
+  .boxp p {
+    padding: 3%;
+    /*margin-top: 15px;*/
+  }
+  #boxback1_1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 12px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+  #box1_2 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 95vw;
+    text-align: left;
+    font-size: 16px;
+    margin: 15px;
+    margin: 25px 5px;
+    display: none;
+  }
+  #boxback1_2 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 12px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+  #box1_3 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 95vw;
+    text-align: left;
+    font-size: 16px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+  #boxback1_3 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 12px;
+    margin: 15px;
+    margin: 25px auto;
+    display: none;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .lesson1 {
+    border: 2px solid #666;
+    border-radius: 15px;
+    width: 40vw;
+    text-align: center;
+    font-size: 16px;
+    margin: 15px 20%;;
+  }
+  .lesson1 a {
+    color: rgb(100, 100, 100);
+  }
+  .lesson1:hover p {
+    color: orange;
+    text-align: center;
+  }
+}
+
+.lesson1 p {
+  color: rgb(100, 100, 100);
+}
+
+.lesson1:hover p {
+  color: orange;
+  text-align: center;
+}

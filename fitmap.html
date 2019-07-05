@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/fitMap.css">
+	<style type="text/css">
+	    * {
+	        margin: 0;
+	        padding: 0;
+	        list-style: none;
+	    }
+	</style>
+	<!-- <link rel="stylesheet" type="text/css" href="css/grid.css"> -->
+
+</head>
+
+<body>
+
+	<input type="checkbox" name="" id="control-box">
+
+	<div class="header">
+		<div class="logo"><a href="index.html"><img src="pic/logo 5_2.png"></a></div>
+
+		<label class="hb" for="control-box">選單按鈕</label>
+
+		<nav>
+			<a href="fitclass.html">Fit Class</a>
+			<a href="fitdiary.html">Fit Diary</a>
+			<a href="fitmap.html">Fit Map</a>
+			<a href="index.html"><img src="pic/logo 5_2.png">
+			<a href="fitstory.html" >Fit Story</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="login.html">Login</a>
+		</nav>
+
+	</div>
+
+	<div class="undernav"></div>
+
+	<!-- 首頁banner圖片輪撥 -->
+
+	<!-- classroom -->
+	<div class="box classroom">
+		<div class="h1title">
+			<h1>Fit Map</h1>
+	</div>
+
+	<div class="fitmapsearch">
+		<div class="mealtype subnav">
+			<form>
+				<select name="Mealtype">
+					<option value="breakfirst">選擇食物類別</option>
+					<option value="breakfirst">TW Food</option>
+					<option value="chinese">Chinese food</option>
+					<option value="Italian">Italian food</option>
+					<option value="Japan">Japanese food</option>
+					<option value="Friday">America food</option>
+					<option value="easy">Singaporean Cuisine </option>
+					<option value="buffet">Vietnamese Cuisine </option>
+				</select>
+			</form>
+		</div>
+		<div class="pricerange subnav">
+			<form>
+				<select name="Mealprice">
+					<option value="supercheap">選擇價格範圍</option>
+					<option value="supercheap">less than 60 TWD </option>
+					<option value="verycheap">61 TWD-120 TWD</option>
+					<option value="Medium">121 TWD-500 TWD</option>
+					<option value="Expensive">501 TWD-1000 TWD</option>
+					<option value="super Expensive">1000 TWD-3000 TWD</option>
+					<option value="killme">more than 3000 TWD</option>
+				</select>
+			</form>
+		</div>
+		<div class="avgcarrorie subnav">
+			<select name="avgkcal">
+				<option value="supercheap">卡路里</option>
+				<option value="supercheap">0-300 卡路里</option>
+				<option value="verycheap">300-600 卡路里</option>
+				<option value="Medium">600-900 卡路里</option>
+				<option value="Expensive">900-1200 卡路里</option>
+				<option value="super Expensive">1500-1800 卡路里</option>
+				<option value="killme">大於 1800 卡路里</option>
+			</select>
+		</div>
+		<div class="keywords">
+			<input type="text" placeholder="關鍵字搜尋" >
+		</div>
+		<button class="submit">送出</button>
+	</div>
+
+<div class="clearfix"></div>
+	<div class="wrapper">
+		<div class="hopageiframe">
+			<iframe width="100%" height="600px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=%E4%B8%AD%E5%A4%AE%E5%A4%A7%E5%AD%B8%E9%BA%A5%E5%91%B3&key=AIzaSyCIiJ5ePXkiOXNbiSK2phLK-saH0HPMeoc" name="mainframe" width="100%" marginwidth="0" marginheight="0" scrolling="No" frameborder="0" id="mainframe"></iframe>
+		</div>
+	</div>
+
+
+
+
+				<div class="fitmapitem3">
+					<div class="mywarmday">
+						<img src="pic/mywarmdays.png">
+					</div>
+					<h4>麥味登</h4>
+					<p>My Warm Day（縮寫MWD）為「溫暖每一天」的涵義，若以「麥味登」的台語讀音，更有「賣袂斷」的好意兆，看見MWD的招牌，就感受到回家般的溫暖和幸福.</p>
+				</div>
+
+				<div class="fitmapitem3">
+					<img src="pic/burger.png" alt="">
+				</div>
+
+				<div class="fitmapitem3">
+					<table border="1" cellspacing="0">
+						<tr>
+							<td>火腿薯餅滿分堡</td>
+							<td>444 kcal</td>
+							<td>40 元</td>
+						</tr>
+						<tr>
+							<td>港式豬肉滿分堡</td>
+							<td>408 kcal</td>
+							<td>50 元</td>
+						</tr>
+						<tr>
+							<td>花生厚牛滿分堡</td>
+							<td>406 kcal</td>
+							<td>60 元</td>
+						</tr>
+						<tr>
+							<td>鮮蔬丹麥堡</td>
+							<td>402 kcal</td>
+							<td>35 元</td>
+						</tr>
+						<tr>
+							<td>歐姆蛋丹麥堡</td>
+							<td>459 kcal</td>
+							<td>50 元</td>
+						</tr>
+						<tr>
+							<td>超厚牛肉起司乳酪堡</td>
+							<td>538 kcal</td>
+							<td>55 元</td>
+						</tr>
+						<tr>
+							<td>燻雞乳酪堡</td>
+							<td>417 kcal</td>
+							<td>55 元</td>
+						</tr>
+						<tr>
+							<td>港式雞扒包</td>
+							<td>555 kcal</td>
+							<td>70 元</td>
+						</tr>
+					</table>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+
+
+
+</div>
+
+
+
+
+
+	<!--footer  -->
+	<div class="footerblock">
+		<p>
+			<a href="#">  Copyright 2017 Eter losing Weight .All rights reserve</a>
+		</p>
+		<p>
+			<a href="termsofservice.html">Terms of service (使用者條款)</a>
+		</p>
+		<p>Contact us  phone number :+886-988-007513</p>
+		<p>
+			<a href="http://www.freepik.com">Picture Resource Designed by Yanalya / Freepik</a>
+		</p>
+	</div>
+
+
+</body>
+</html>

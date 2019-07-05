@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMR TABLE</title>
+    <style media="screen">
+        body{
+              background: linear-gradient(to right, #25c481, #25b7c4, #25c481);
+        }
+        th{
+
+
+        }
+        td,th{
+            height: 20px;
+            width: 120px;
+            font-size: 12px;
+            font-family: sans-serif;
+            padding: 15px 0;
+        }
+        table,tr,td{
+            /*border: 1px red solid；*/
+            border: 1px solid #ccc;
+        }
+        table{
+            border-collapse: collapse;
+            margin:15px auto;
+            width: 2000px;
+        }
+
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        *{
+
+            color:#eee;
+        }
+        .kg{
+            text-align: center;
+            height: 35px;
+        }
+        .inputarea{
+            text-align: center;
+            font-size: 20px;
+
+        }
+        #yearold,#weight,#height{
+            text-align: center;
+            color: #333;
+        }
+        button{
+            color:#333;
+        }
+
+        .content , h4 {
+            display: inline-block;
+        }
+        .content{
+            min-width: 200px;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1> 　BMR　 (Basal Metabolic Rate)基礎代謝　速查表</h1>
+    <h2>TDEE 每日消耗熱量對照表 </h2>
+    <H3 STYLE="color: red; text-align: center;">減肥千萬別吃超過TDEE</H3>
+    <div class="inputarea">
+
+        <table>
+            <tr>
+                <td>請輸入年齡 </td>
+                <td><input type="text" id="yearold"></td>
+            </tr>
+            <tr>
+                <td>請輸入體重 (KG)  </td>
+                <td> <input type="text" id="weight"></td>
+            </tr>
+            <tr>
+                <td>請輸入身高 (CM)</td>
+                <td><input type="text" id="height"></td>
+            </tr>
+            <tr>
+                <td>請選擇性別 </td>
+                <td><input type="radio" name="sex" value="male" id="sex">男<input type="radio" name="sex" value="female" id="sex">女</td>
+            </tr>
+        </table>
+
+
+
+        <button type="button" id="send" name="send">send </button>
+        <h4>Type A</h4><div class="content" id="TDEECalcA"></div>
+        <h4>Type B</h4><div class="content" id="TDEECalcB"></div>
+        <h4>Type C</h4><div class="content" id="TDEECalcC"></div>
+        <h4>Type D</h4><div class="content" id="TDEECalcD"></div>
+        <h4>Type E</h4><div class="content" id="TDEECalcE"></div>
+
+
+    </div>
+<table>
+    <tr>
+        <td></td>
+        <td>TDEE 係數</td>
+        <td>生活習慣</td>
+    </tr>
+    <tr>
+        <td>A type</td>
+        <td>1.2</td>
+        <td>久坐族／無運動習慣者</td>
+    </tr>
+    <tr>
+        <td>B type</td>
+        <td>1.375</td>
+        <td>輕度運動者／一周一至三天運動</td>
+    </tr>
+    <tr>
+        <td>C type</td>
+        <td>1.55</td>
+        <td>中度運動者／一周三至五天運動</td>
+    </tr>
+    <tr>
+        <td>D type</td>
+        <td>1.725</td>
+        <td>激烈運動者／一周六至七天運動</td>
+    </tr>
+    <tr>
+        <td>E type</td>
+        <td>1.9</td>
+        <td>超激烈運動者／體力活的工作／一天訓練兩次</td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+     document.getElementById('send').addEventListener("click", printInConsole);
+
+     function printInConsole(){
+         yearold = Number(document.getElementById('yearold').value);
+         weight = Number(document.getElementById('weight').value);
+         height = Number(document.getElementById('height').value);
+         sex = document.getElementById('sex').value;
+         // console.log(document.getElementById('yearold').value);
+         // console.log(document.getElementById('weight').value);
+         // console.log(document.getElementById('height').value);
+         // console.log(document.getElementById('sex').value);
+         console.log(typeof(yearold));
+         console.log(typeof(weight));
+         console.log(typeof(height));
+         console.log(sex);
+         if (yearold == "" || weight == "" || height == "" ){
+             window.alert("請填入完整資料或至下方查詢速查表");
+
+         }else if (sex == ""){
+             window.alert("難道你是人妖");
+
+         }else if(sex == "male"){
+             // window.alert("你是男的");
+
+             BMR = (13.7*weight)+(5*height)-(6.8*yearold)+66;
+
+
+             CalcTypeA = BMR*1.2;
+             CalcTypeB = BMR*1.375;
+             CalcTypeC = BMR*1.55;
+             CalcTypeD = BMR*1.725;
+             CalcTypeE = BMR*1.9;
+
+             document.getElementById('TDEECalcA').innerHTML  = Math.round(CalcTypeA) + "大卡";
+             document.getElementById('TDEECalcB').innerHTML  = Math.round(CalcTypeB) + "大卡";
+             document.getElementById('TDEECalcC').innerHTML  = Math.round(CalcTypeC) + "大卡";
+             document.getElementById('TDEECalcD').innerHTML  = Math.round(CalcTypeD) + "大卡";
+             document.getElementById('TDEECalcE').innerHTML  = Math.round(CalcTypeE) + "大卡";
+
+
+         }else if(sex == "female"){
+             // window.alert("你是女的");
+             BMR = (9.6*weight)+(1.8*height)-(4.7*yearold)+655;
+             window.alert(BMR);
+             CalcTypeA = BMR*1.2;
+             CalcTypeB = BMR*1.375;
+             CalcTypeC = BMR*1.55;
+             CalcTypeD = BMR*1.725;
+             CalcTypeE = BMR*1.9;
+
+             document.getElementById('TDEECalcA').text = Math.round(CalcTypeA) + "大卡";
+             document.getElementById('TDEECalcB').text = Math.round(CalcTypeB) + "大卡";
+             document.getElementById('TDEECalcC').text = Math.round(CalcTypeC) + "大卡";
+             document.getElementById('TDEECalcD').text = Math.round(CalcTypeD) + "大卡";
+             document.getElementById('TDEECalcE').text = Math.round(CalcTypeE) + "大卡";
+         }
+
+     }
+</script>
+
+
+<table  >
+
+<script>
+    document.write('<tr class="kg">'+"<th>"+"</th>");
+
+        for(k=145;k<=180;k=k+2.5){
+            document.write("<th>"+k+"cm"+"</th>");
+        }
+    document.write("</tr>");
+
+    for(i=45;i<=100;i++)
+        {document.write('<tr class="kg">'+"<td>"+i+"kg"+"</td>");
+
+            for(j=145;j<=180;j=j+2.5)
+            { bmr=66+(13.7*i)+(5*j)-(6.8*29);
+            document.write("<td>"+i+"公斤"+"<br>"+j+"公分"+"<br>"+"BMR="+Math.round(bmr)+"大卡"
+            +"TDEE(A):"+Math.round(bmr*1.2)+"大卡"+"<br>"
+            +"TDEE(B):"+Math.round(bmr*1.375)+"大卡"+"<br>"
+            +"TDEE(C):"+Math.round(bmr*1.55)+"大卡"+"<br>"
+            +"TDEE(D):"+Math.round(bmr*1.725)+"大卡"+"<br>"
+            +"TDEE(E):"+Math.round(bmr*1.9)+"大卡"+"<br>"
+            +"</td>");
+            }
+    document.write("</tr>");
+    }
+</script>
+</table>
+</body>
+</html>
